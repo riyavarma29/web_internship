@@ -1,0 +1,84 @@
+body {
+  background-color: #e5dada;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+.task-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#task {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#task:focus {
+  border-color: #4caf50;
+}
+
+#addtaskBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addtaskBtn:hover {
+  background-color: #45a049;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8f5e9;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.checklist span {
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.checklist button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checklist button:hover {
+  background-color: #d32f2f;
+}
